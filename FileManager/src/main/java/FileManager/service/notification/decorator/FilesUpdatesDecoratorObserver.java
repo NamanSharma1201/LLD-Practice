@@ -3,7 +3,7 @@ package FileManager.service.notification.decorator;
 import FileManager.service.notification.IfileObserver;
 
 public abstract class FilesUpdatesDecoratorObserver implements IfileObserver {
-    private  IfileObserver observer;
+    private  final IfileObserver observer;
 
     public FilesUpdatesDecoratorObserver(IfileObserver observer) {
         this.observer = observer;
