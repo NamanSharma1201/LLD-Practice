@@ -31,7 +31,7 @@ public class App {
             String content = "Hi! my name is Naman.";
             fileManager.upload("./message.txt", content.getBytes(StandardCharsets.UTF_8));
             System.out.println("Upload successful.");
-        }catch (IllegalAccessException ex){
+        }catch (IllegalArgumentException ex){
             System.err.println("Configuration Error : " + ex.getMessage());
         }catch (Exception ex){
             System.err.println("System Error : " + ex.getMessage());

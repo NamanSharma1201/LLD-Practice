@@ -19,7 +19,7 @@ public class FileManagementFactoryImpl implements IFileManagementFactory{
         DECORATOR_REGISTRY.put("Email", FilesUpdatesEmailDecoratorObserver::new);
     }
     @Override
-    public FileManager createFileManager(String ioMethod, List<String> observerTypes) throws Exception{
+    public FileManager createFileManager(String ioMethod, List<String> observerTypes) throws IllegalAccessException{
         IfileIOStrategy strategy1= FileIOFactory.getFileIOStrategy(ioMethod);
         IfileObserver compositeObserver = buildCompositeObserver(observerTypes);
         FileManager manager = new FileManager(strategy1);

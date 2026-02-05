@@ -15,7 +15,7 @@ public class FileIOFactory {
         STRATEGIES_REGISTRY.put("local", LocalFileIO::new);
     }
 
-    public static IfileIOStrategy getFileIOStrategy(String method) throws Exception{
+    public static IfileIOStrategy getFileIOStrategy(String method) throws IllegalAccessException{
         if(method == null){
             throw new IllegalArgumentException("Storage method can not be null");
         }
