@@ -29,7 +29,7 @@ public class App {
         try{
             FileManager fileManager = factory.createFileManager(storageType, notificationChannels);
             String content = "Hi! my name is Naman.";
-            fileManager.upload("./message.txt", content.getBytes(StandardCharsets.UTF_8));`
+            fileManager.upload("./message.txt", content.getBytes(StandardCharsets.UTF_8));
             System.out.println("Upload successful.");
         }catch (IllegalAccessException ex){
             System.err.println("Configuration Error : " + ex.getMessage());
