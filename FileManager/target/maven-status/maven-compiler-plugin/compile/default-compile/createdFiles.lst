@@ -1,0 +1,13 @@
+FileManager\service\notification\decorator\FileUpdatesSmsDecoratorObserver.class
+FileManager\fileIO\IfileIOStrategy.class
+FileManager\manager\FileManager.class
+FileManager\service\FileEventNotifier.class
+FileManager\service\notification\decorator\FilesUpdatesDecoratorObserver.class
+FileManager\Factory\IFileManagementFactory.class
+FileManager\service\notification\decorator\FilesUpdatesEmailDecoratorObserver.class
+FileManager\Factory\FileIOFactory.class
+FileManager\Factory\FileManagementFactoryImpl.class
+FileManager\service\notification\FileUpdatesObserver.class
+FileManager\App.class
+FileManager\service\notification\IfileObserver.class
+FileManager\fileIO\LocalFileIO.class

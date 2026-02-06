@@ -36,7 +36,6 @@ public class FileManagementFactoryImpl implements IFileManagementFactory{
             if(!DECORATOR_REGISTRY.containsKey(type)){
                 throw  new IllegalArgumentException("Unknown observer type : " + type );
             }
-
             rootObserver = DECORATOR_REGISTRY.get(type).apply(rootObserver);
 
         }
